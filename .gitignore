@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.vercel
+*.mp4
+*.mov
+*.webm
+.env
+.env.local
