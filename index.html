@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chamelo Ads · Creative Studio</title>
-  <meta name="description" content="Internal working doc for Chamelo ad campaigns. Built with Claude Code + kie.ai. Deployed via Vercel." />
+  <title>Chamelo · Creative Studio</title>
+  <meta name="description" content="Chamelo Creative Studio — the internal home for brand identity, voice, campaigns, and the AI-assisted ad pipeline." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -15,20 +15,18 @@
   <header class="topbar">
     <div class="topbar__inner">
       <a class="topbar__brand" href="./">
-        <span class="brand__mark">◐</span>
-        <span class="brand__name">Chamelo</span>
-        <span class="brand__sep">/</span>
+        <span class="brand__name">CHAMELO</span>
+        <span class="brand__sep">·</span>
         <span class="brand__suffix">Creative Studio</span>
       </a>
       <nav class="topbar__nav">
         <a href="#brand">Brand</a>
-        <a href="#script">Script</a>
-        <a href="#cast">Cast</a>
-        <a href="#storyboard">Storyboard</a>
-        <a href="#video">Video</a>
-        <a href="#statics">Statics</a>
+        <a href="#voice">Voice</a>
+        <a href="#products">Products</a>
+        <a href="#campaigns">Campaigns</a>
+        <a href="#system">System</a>
       </nav>
-      <span class="status status--wip">WIP · v0.1</span>
+      <span class="status status--wip">v0.1 · Internal</span>
     </div>
   </header>
 
@@ -37,32 +35,31 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero__inner">
-        <p class="eyebrow">Campaign 01 · Internal Working Doc</p>
+        <p class="eyebrow">Internal · Creative Studio</p>
         <h1 class="hero__title">
-          <span class="hero__title-main">Music Shield Gen 2</span>
-          <span class="hero__title-sub">Run light. Hear everything.</span>
+          <span class="hero__title-main">Be different.</span>
+          <span class="hero__title-main">See different.</span>
         </h1>
         <p class="hero__deck">
-          A 30-second UGC ad built end to end in Claude Code — brand intel,
-          script, casting, storyboard, video, and a full Meta static pack.
-          This page is the working doc. It updates as the campaign generates.
+          Instant tint and color-changing glasses. Chamelo is leading a new era
+          of smart eyewear — direct, on-demand control over light, color, and
+          state. This is the internal home for the brand system and every
+          campaign built on top of it.
         </p>
-        <dl class="hero__meta">
-          <div><dt>Status</dt><dd>In progress</dd></div>
-          <div><dt>Owner</dt><dd>Chase · CCO</dd></div>
-          <div><dt>Engine</dt><dd>kie.ai · GPT Image 2 · Kling 3.0</dd></div>
-          <div><dt>Format</dt><dd>1× 30s spot · 16 statics</dd></div>
-        </dl>
+        <div class="hero__cta">
+          <a href="#brand" class="btn btn--primary">Brand system</a>
+          <a href="#campaigns" class="btn btn--ghost">Campaigns →</a>
+        </div>
       </div>
     </section>
 
     <!-- TRUST BAR -->
     <section class="trustbar">
       <div class="trustbar__inner">
+        <div><span class="trustbar__stat">TIME</span> Best Invention</div>
         <div><span class="trustbar__stat">4.7★</span> rating</div>
         <div><span class="trustbar__stat">9,200+</span> reviews</div>
         <div><span class="trustbar__stat">100K+</span> customers</div>
-        <div><span class="trustbar__stat">TIME</span> Best Invention</div>
         <div><span class="trustbar__stat">30-day</span> guarantee</div>
       </div>
     </section>
@@ -71,222 +68,243 @@
     <section class="section" id="brand">
       <div class="section__head">
         <p class="section__num">01</p>
-        <h2 class="section__title">Brand Intelligence</h2>
+        <h2 class="section__title">Brand</h2>
         <p class="section__deck">
-          What Chamelo actually sells beneath the apparent product.
-          Pulled from <code>01_brand-overview.md</code> and <code>02_voice-guide.md</code>.
+          Pulled from <code>01_brand-overview.md</code> and synced with
+          <code>chamelo-branding.json</code>. Source of truth for every
+          downstream campaign.
         </p>
       </div>
 
       <div class="prose">
         <p class="lede">
-          Chamelo doesn't sell sunglasses. It sells <em>control</em> — over light,
-          over environment, over how you see the world.
+          We don't sell sunglasses. We sell <em>control</em> — over light, over
+          environment, over how you see the world.
         </p>
         <p>
-          The Chamelo customer has been frustrated by static lenses — squinting
-          through the wrong tint, carrying two pairs, missing visibility on a
-          run, ride, or commute. Static lenses are a compromise. Chamelo removes
-          the compromise.
-        </p>
-        <p>
-          For <strong>Music Shield Gen 2</strong>, the tint slider is the hero.
-          Audio is a supporting benefit, not the lead. The wedge is the wearer's
-          state, not the spec: <em>Run light. Hear everything.</em>
+          Chamelo pioneered the tint-adjustable and color-changing lens
+          category. Proprietary liquid crystal film tech lets wearers change
+          tint or color instantly — manually, automatically, or via app. Named
+          a TIME Magazine Best Invention. We sit at the intersection of
+          performance sport and lifestyle, with premium pricing and a
+          technology-first identity.
         </p>
       </div>
 
-      <div class="cards cards--3">
+      <div class="cards cards--4">
         <article class="card">
-          <p class="card__label">The product</p>
+          <p class="card__label">Innovation</p>
           <p class="card__body">
-            Tint-adjustable smart sunglasses with open-ear audio. Slide from
-            bright to blackout in 0.1 seconds. Built for miles, not couch time.
+            We push the boundaries of eyewear technology. Smart, adaptive
+            products that enhance daily life.
           </p>
         </article>
         <article class="card">
-          <p class="card__label">The audience</p>
+          <p class="card__label">Style &amp; Versatility</p>
           <p class="card__body">
-            Runners, riders, commuters. Owns one pair too many. Already
-            convinced about smart wearables — needs proof the lens earns its
-            place on their face every day.
+            Sophisticated design meets versatility. Effortlessly stylish in any
+            setting.
           </p>
         </article>
         <article class="card">
-          <p class="card__label">The wedge</p>
+          <p class="card__label">Personalization</p>
           <p class="card__body">
-            Direct, on-demand tint control. Not auto-reactive. Not Transitions.
-            You decide. Tap or slide. The lens keeps up.
+            Every pair designed to fit your lifestyle. The lens choice is your
+            choice.
+          </p>
+        </article>
+        <article class="card">
+          <p class="card__label">Community</p>
+          <p class="card__body">
+            A sense of belonging. Customer feedback drives the product
+            roadmap.
           </p>
         </article>
       </div>
     </section>
 
-    <!-- 02 · SCRIPT -->
-    <section class="section" id="script">
+    <!-- 02 · VOICE -->
+    <section class="section section--alt" id="voice">
       <div class="section__head">
         <p class="section__num">02</p>
-        <h2 class="section__title">Script</h2>
+        <h2 class="section__title">Voice</h2>
         <p class="section__deck">
-          One 30-second UGC, voice-over style. Creator narrates B-roll of her
-          own run — in shot, never talking to camera. Beat-by-beat below.
+          Confident. Fun. Passionate. Real. Short declarative triples and
+          benefit-first phrasing. Same energy as Stephon Marbury.
         </p>
       </div>
 
-      <div class="script">
-        <p class="script__placeholder">
-          Script not yet generated. Run Step 02 of the walkthrough to populate.
-        </p>
-        <!-- Replace the placeholder above with the <table> below when ready. -->
-        <!--
-        <table class="script__table">
-          <thead><tr><th>Time</th><th>Visual</th><th>Voice-over</th></tr></thead>
-          <tbody>
-            <tr><td>0–3s</td><td>…</td><td>…</td></tr>
-          </tbody>
-        </table>
-        -->
+      <div class="grid grid--3 grid--padded">
+        <article class="voicecard">
+          <p class="voicecard__label">Triples</p>
+          <p class="voicecard__example">Four colors. One tap. Instant calm.</p>
+          <p class="voicecard__example">Tint Control. Audio. Knicks.</p>
+          <p class="voicecard__example">Run light. Hear everything.</p>
+        </article>
+        <article class="voicecard">
+          <p class="voicecard__label">Benefit-first</p>
+          <p class="voicecard__example">Adjust lens tint in 0.1 seconds.</p>
+          <p class="voicecard__example">From bright to blackout in 0.1s.</p>
+          <p class="voicecard__example">From city chaos to instant calm.</p>
+        </article>
+        <article class="voicecard voicecard--banned">
+          <p class="voicecard__label">Never</p>
+          <p class="voicecard__example">Game-changing.</p>
+          <p class="voicecard__example">Revolutionary.</p>
+          <p class="voicecard__example">Push your limits.</p>
+          <p class="voicecard__example">Next-level.</p>
+        </article>
       </div>
     </section>
 
-    <!-- 03 · CAST -->
-    <section class="section" id="cast">
+    <!-- 03 · PRODUCTS -->
+    <section class="section" id="products">
       <div class="section__head">
         <p class="section__num">03</p>
-        <h2 class="section__title">Casting</h2>
+        <h2 class="section__title">Product Universe</h2>
         <p class="section__deck">
-          Five archetype references. Pick one to lock as the lead. Soul ID
-          training required before any of these ship to a paid ad.
+          Four product lines. Each carries the same wedge — instant, direct,
+          on-demand control — expressed through a different hero feature.
         </p>
       </div>
 
-      <div class="grid grid--5">
-        <figure class="tile tile--empty">
-          <div class="tile__media"><span class="tile__slot">CAST-01</span></div>
-          <figcaption><strong>Pending</strong><br><span>Archetype A</span></figcaption>
-        </figure>
-        <figure class="tile tile--empty">
-          <div class="tile__media"><span class="tile__slot">CAST-02</span></div>
-          <figcaption><strong>Pending</strong><br><span>Archetype B</span></figcaption>
-        </figure>
-        <figure class="tile tile--empty">
-          <div class="tile__media"><span class="tile__slot">CAST-03</span></div>
-          <figcaption><strong>Pending</strong><br><span>Archetype C</span></figcaption>
-        </figure>
-        <figure class="tile tile--empty">
-          <div class="tile__media"><span class="tile__slot">CAST-04</span></div>
-          <figcaption><strong>Pending</strong><br><span>Archetype D</span></figcaption>
-        </figure>
-        <figure class="tile tile--empty">
-          <div class="tile__media"><span class="tile__slot">CAST-05</span></div>
-          <figcaption><strong>Pending</strong><br><span>Archetype E</span></figcaption>
-        </figure>
+      <div class="lineup">
+        <article class="lineup__row">
+          <div class="lineup__media"><span class="lineup__slot">AURA</span></div>
+          <div class="lineup__copy">
+            <p class="lineup__label">Aura</p>
+            <h3 class="lineup__headline">One frame. Four colors.</h3>
+            <p class="lineup__body">
+              Mood-changing eyewear. The four-color switch is the hook. Frame
+              it around mood, identity, instant transformation. TIME Magazine
+              Best Invention.
+            </p>
+            <p class="lineup__hero">Hero feature · Four-color tap switch</p>
+          </div>
+        </article>
+
+        <article class="lineup__row lineup__row--reverse">
+          <div class="lineup__media"><span class="lineup__slot">MUSIC SHIELD</span></div>
+          <div class="lineup__copy">
+            <p class="lineup__label">Music Shield Gen 2</p>
+            <h3 class="lineup__headline">Run light. Hear everything.</h3>
+            <p class="lineup__body">
+              Tint-adjustable sport sunglasses with open-ear audio. Slide from
+              bright to blackout in 0.1s. Built for miles, not couch time.
+            </p>
+            <p class="lineup__hero">Hero feature · Tint slider (audio supports)</p>
+          </div>
+        </article>
+
+        <article class="lineup__row">
+          <div class="lineup__media"><span class="lineup__slot">KNICKS</span></div>
+          <div class="lineup__copy">
+            <p class="lineup__label">Knicks Edition</p>
+            <h3 class="lineup__headline">Built in Blue. Tuned for Orange.</h3>
+            <p class="lineup__body">
+              Tint Control. Audio. Knicks. Co-branded colorway with Marbury at
+              the center.
+            </p>
+            <p class="lineup__hero">Hero feature · Co-brand · ambassador-led</p>
+          </div>
+        </article>
+
+        <article class="lineup__row lineup__row--reverse">
+          <div class="lineup__media"><span class="lineup__slot">PRISMATIC</span></div>
+          <div class="lineup__copy">
+            <p class="lineup__label">Prismatic</p>
+            <h3 class="lineup__headline">TBD — pending product brief.</h3>
+            <p class="lineup__body">
+              Positioning to be added to <code>chamelo-branding.json</code>
+              once finalized.
+            </p>
+            <p class="lineup__hero">Hero feature · TBD</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- 04 · STORYBOARD -->
-    <section class="section" id="storyboard">
+    <!-- 04 · CAMPAIGNS -->
+    <section class="section section--alt" id="campaigns">
       <div class="section__head">
         <p class="section__num">04</p>
-        <h2 class="section__title">Storyboard · 8 beats × 2 variants</h2>
+        <h2 class="section__title">Campaigns</h2>
         <p class="section__deck">
-          First-frame stills. Two variants per beat for A/B selection. Actor
-          and product references locked into every generation.
+          Every campaign lives as a sub-page. New campaigns are spun up from
+          the brand system in this repo — brand intel, script, casting,
+          storyboard, video, statics.
         </p>
       </div>
 
-      <div class="grid grid--4">
-        <!-- 16 placeholders. Replace .tile--empty with .tile and swap in <img>. -->
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F1A · 0–3s</span></div><figcaption><strong>Beat 1 · A</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F1B · 0–3s</span></div><figcaption><strong>Beat 1 · B</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F2A · 3–6s</span></div><figcaption><strong>Beat 2 · A</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F2B · 3–6s</span></div><figcaption><strong>Beat 2 · B</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F3A · 6–10s</span></div><figcaption><strong>Beat 3 · A</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F3B · 6–10s</span></div><figcaption><strong>Beat 3 · B</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F4A · 10–14s</span></div><figcaption><strong>Beat 4 · A</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F4B · 10–14s</span></div><figcaption><strong>Beat 4 · B</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F5A · 14–19s</span></div><figcaption><strong>Beat 5 · A</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F5B · 14–19s</span></div><figcaption><strong>Beat 5 · B</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F6A · 19–24s</span></div><figcaption><strong>Beat 6 · A</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F6B · 19–24s</span></div><figcaption><strong>Beat 6 · B</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F7A · 24–28s</span></div><figcaption><strong>Beat 7 · A</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F7B · 24–28s</span></div><figcaption><strong>Beat 7 · B</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F8A · 28–30s</span></div><figcaption><strong>Beat 8 · A</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">F8B · 28–30s</span></div><figcaption><strong>Beat 8 · B</strong></figcaption></figure>
+      <div class="campaigns">
+        <a class="campaign campaign--empty" href="#" aria-disabled="true">
+          <p class="campaign__date">Q3 · 2026</p>
+          <h3 class="campaign__title">Music Shield Gen 2 — Launch</h3>
+          <p class="campaign__body">
+            First UGC campaign built on the new pipeline. 30s spot + 16 Meta
+            statics. Not yet generated.
+          </p>
+          <p class="campaign__status">Status · Pending Step 01</p>
+        </a>
+        <a class="campaign campaign--empty" href="#" aria-disabled="true">
+          <p class="campaign__date">TBD</p>
+          <h3 class="campaign__title">Aura · Mood-on-command</h3>
+          <p class="campaign__body">
+            Aura mood-state campaign. To be scoped after Music Shield ships.
+          </p>
+          <p class="campaign__status">Status · Planned</p>
+        </a>
+        <a class="campaign campaign--empty" href="#" aria-disabled="true">
+          <p class="campaign__date">TBD</p>
+          <h3 class="campaign__title">Knicks Edition · Marbury</h3>
+          <p class="campaign__body">
+            Founder-led campaign anchored on real Marbury moments. Co-brand
+            timing TBD.
+          </p>
+          <p class="campaign__status">Status · Planned</p>
+        </a>
       </div>
     </section>
 
-    <!-- 05 · VIDEO -->
-    <section class="section" id="video">
+    <!-- 05 · SYSTEM -->
+    <section class="section" id="system">
       <div class="section__head">
         <p class="section__num">05</p>
-        <h2 class="section__title">Video Clips · 8 × 5s</h2>
+        <h2 class="section__title">System</h2>
         <p class="section__deck">
-          Each picked still animated in Kling 3.0 image-to-video. Identity,
-          product, and lighting stay locked. 40s of source → 30s cut.
+          Source files, generation pipeline, and AI-content guardrails.
         </p>
       </div>
 
-      <div class="grid grid--4">
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">VP1 · 0–3s</span></div><figcaption><strong>Beat 1</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">VP2 · 3–6s</span></div><figcaption><strong>Beat 2</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">VP3 · 6–10s</span></div><figcaption><strong>Beat 3</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">VP4 · 10–14s</span></div><figcaption><strong>Beat 4</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">VP5 · 14–19s</span></div><figcaption><strong>Beat 5</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">VP6 · 19–24s</span></div><figcaption><strong>Beat 6</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">VP7 · 24–28s</span></div><figcaption><strong>Beat 7</strong></figcaption></figure>
-        <figure class="tile tile--empty"><div class="tile__media"><span class="tile__slot">VP8 · 28–30s</span></div><figcaption><strong>Beat 8</strong></figcaption></figure>
-      </div>
-    </section>
-
-    <!-- 06 · STATICS -->
-    <section class="section" id="statics">
-      <div class="section__head">
-        <p class="section__num">06</p>
-        <h2 class="section__title">Meta Statics · Cold → Hot</h2>
-        <p class="section__deck">
-          16 static ad creatives across the funnel. 4 per stage. Same locked
-          actor + product references. Square 1:1.
-        </p>
-      </div>
-
-      <div class="funnel">
-        <div class="funnel__stage">
-          <p class="funnel__label">Stage 01 · Cold</p>
-          <div class="grid grid--4-tight">
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-01</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-02</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-03</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-04</span></div></figure>
-          </div>
-        </div>
-        <div class="funnel__stage">
-          <p class="funnel__label">Stage 02 · Warming</p>
-          <div class="grid grid--4-tight">
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-05</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-06</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-07</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-08</span></div></figure>
-          </div>
-        </div>
-        <div class="funnel__stage">
-          <p class="funnel__label">Stage 03 · Warm</p>
-          <div class="grid grid--4-tight">
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-09</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-10</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-11</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-12</span></div></figure>
-          </div>
-        </div>
-        <div class="funnel__stage">
-          <p class="funnel__label">Stage 04 · Hot</p>
-          <div class="grid grid--4-tight">
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-13</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-14</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-15</span></div></figure>
-            <figure class="tile tile--empty tile--square"><div class="tile__media"><span class="tile__slot">MA-16</span></div></figure>
-          </div>
-        </div>
+      <div class="grid grid--3 grid--padded">
+        <article class="syscard">
+          <p class="syscard__label">Brand Brain</p>
+          <ul class="syscard__list">
+            <li><code>01_brand-overview.md</code></li>
+            <li><code>02_voice-guide.md</code></li>
+            <li><code>chamelo-branding.json</code></li>
+          </ul>
+        </article>
+        <article class="syscard">
+          <p class="syscard__label">Pipeline</p>
+          <ul class="syscard__list">
+            <li>Claude Code · orchestration</li>
+            <li>kie.ai · image + video generation</li>
+            <li>GPT Image 2 · stills</li>
+            <li>Kling 3.0 · image-to-video</li>
+            <li>Figma · finishing</li>
+          </ul>
+        </article>
+        <article class="syscard">
+          <p class="syscard__label">AI Content Rules</p>
+          <ul class="syscard__list">
+            <li>Soul ID required for any human likeness</li>
+            <li>Figma finishing required — no raw outputs</li>
+            <li>No AI voices in paid ads</li>
+            <li>Meta AI Content Label on every spot</li>
+            <li>Bar: indistinguishable from production</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -294,17 +312,14 @@
 
   <footer class="footer">
     <div class="footer__inner">
-      <p>
-        <strong>Chamelo Creative Studio</strong> ·
-        Internal working doc · v0.1
-      </p>
-      <p class="footer__meta">
-        Source · <a href="https://github.com/Chameloeyewear/chamelo-ads">github.com/Chameloeyewear/chamelo-ads</a>
-        · Deployed via Vercel
-      </p>
-      <p class="footer__rule">
-        Be different. See different.
-      </p>
+      <div class="footer__row">
+        <p class="footer__brand">CHAMELO</p>
+        <p class="footer__meta">
+          Creative Studio · v0.1 ·
+          <a href="https://github.com/Chameloeyewear/chamelo-ads">github.com/Chameloeyewear/chamelo-ads</a>
+        </p>
+      </div>
+      <p class="footer__rule">Be different. See different.</p>
     </div>
   </footer>
 

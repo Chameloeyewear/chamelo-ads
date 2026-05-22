@@ -1,0 +1,341 @@
+{
+  "_meta": {
+    "version": "0.1",
+    "last_updated": "2026-05-22",
+    "sources": [
+      "chamelo.com (homepage scrape)",
+      "chamelo.com/pages/about-us",
+      "01_brand-overview.md (Brand Brain)",
+      "02_voice-guide.md (Brand Brain)"
+    ],
+    "owner": "Chase · CCO",
+    "notes": "Living document. Update as the brand system evolves. Colors marked 'approximate' are visual estimates — confirm against the official brand book before locking."
+  },
+
+  "identity": {
+    "name": "Chamelo",
+    "legal_name": "Chamelo Eyewear",
+    "category": "Smart eyewear · tint-adjustable and color-changing lenses",
+    "tagline_primary": "Be different. See different.",
+    "positioning_oneliner": "Instant tint and color-changing glasses.",
+    "wedge": "Direct, on-demand tint control — not auto-reactive, not Transitions. Tap or slide. The lens keeps up.",
+    "real_product": "We don't sell sunglasses. We sell control — over light, over environment, over how you see the world.",
+    "mission_short": "Chamelo is leading a new era of smart eyewear, leveraging cutting-edge technology to empower people to see the world on their terms.",
+    "vision": "A future of eyewear that fuses cutting-edge technology with personal style, redefining the industry and empowering individuals to express their unique vision of the world.",
+    "essence": "Game-changing, performance-enhancing, and mood-boosting sunglasses. Made with next-gen Chamelo® lenses, created to help you see better."
+  },
+
+  "trust": {
+    "rating": "4.7",
+    "review_count": "9,200+",
+    "customer_count": "100,000+",
+    "press_awards": ["TIME Magazine Best Invention"],
+    "guarantee": "30-day money-back",
+    "warranty": "1-year manufacturer's",
+    "shipping": "Fast and free",
+    "trial": "30-day free trial"
+  },
+
+  "colors": {
+    "_note": "Approximate hex codes derived from visual inspection of chamelo.com. Replace with exact brand-book values when confirmed.",
+    "primary": {
+      "ink": "#0A0A0A",
+      "paper": "#FFFFFF"
+    },
+    "neutrals": {
+      "soft_white": "#FAFAFA",
+      "stone": "#EFEDE8",
+      "line": "#E5E3DD",
+      "mid": "#6B6B68",
+      "muted": "#9A9A95"
+    },
+    "accents": {
+      "aura_gold": "#C9A24B",
+      "aura_gold_soft": "#F2E6C8",
+      "fire": "#E04A2A",
+      "knicks_blue": "#1D3D8A",
+      "knicks_orange": "#F58426"
+    },
+    "ui": {
+      "background": "#FFFFFF",
+      "background_alt": "#FAFAFA",
+      "text": "#0A0A0A",
+      "text_mid": "#4A4A48",
+      "border": "#E5E3DD",
+      "accent": "#C9A24B"
+    }
+  },
+
+  "typography": {
+    "_note": "Chamelo.com runs on Shopify; the live site uses a clean grotesque sans for UI and body. Exact font family not confirmed in scrape — best stand-ins below until brand book confirms.",
+    "headline_family": "Fraunces, Georgia, 'Times New Roman', serif",
+    "headline_style": "Editorial serif used sparingly for premium headlines. Optical-size aware. Italic for sub-heads and accent phrases.",
+    "ui_family": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "ui_style": "Geometric grotesque. Medium weight for navigation, regular for body, semibold for stats.",
+    "mono_family": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace",
+    "scale": {
+      "display": "clamp(56px, 9vw, 120px)",
+      "h1": "clamp(40px, 6vw, 72px)",
+      "h2": "clamp(28px, 4vw, 44px)",
+      "h3": "clamp(20px, 2.5vw, 28px)",
+      "body": "16px",
+      "small": "13px",
+      "micro": "11px"
+    },
+    "letter_spacing": {
+      "display": "-0.02em",
+      "label": "0.14em (uppercase)",
+      "body": "0"
+    }
+  },
+
+  "logo": {
+    "type": "Wordmark only — no separate symbol/glyph",
+    "asset_path_observed": "/cdn/shop/files/Footer-Logo-New.svg",
+    "typography": "Custom or modified geometric sans (to be confirmed against brand book)",
+    "treatments": [
+      "Black wordmark on white background (primary)",
+      "White wordmark on black background (footer, dark sections)"
+    ],
+    "clear_space": "TBD — match the wordmark height as minimum padding on all sides until brand book confirms",
+    "minimum_size": "TBD"
+  },
+
+  "voice": {
+    "pillars": [
+      {
+        "name": "Confident and Knowledgeable",
+        "summary": "Authoritative, bold, approachable. Make complex tech easy to understand. Skip hedging. Make claims specific.",
+        "do": ["Lead with what we know", "Use exact specs ('0.1 seconds', '63% to 17% VLT')", "Sound certain"],
+        "dont": ["Hedge ('maybe', 'kind of', 'we think')", "Vague claims ('fast', 'wide range')"]
+      },
+      {
+        "name": "Fun and Young-at-Heart",
+        "summary": "Lively, youthful energy. Light-hearted, playful, vibrant. Pattern-interrupt copy wins on social.",
+        "do": ["Single exclamation point when it lands", "Pattern-interrupts ('Sunglasses, but they listen.')", "Humor only when it works"],
+        "dont": ["Double exclamations", "Forced humor"]
+      },
+      {
+        "name": "Passionate and Personal",
+        "summary": "Warm, engaging, personal. Connect, don't sell. Use real customer names.",
+        "do": ["Talk like a friend", "Quote real customers", "Add a human touch"],
+        "dont": ["Corporate jargon", "PR-speak"]
+      },
+      {
+        "name": "Keep It Real",
+        "summary": "Authentic, sincere, straightforward. Boldness with integrity. Same energy as Stephon Marbury.",
+        "do": ["Let the product speak", "Acknowledge limitations", "Let ambassadors sound like themselves"],
+        "dont": ["Oversell", "Script ambassadors out of their natural voice"]
+      }
+    ],
+    "structures": {
+      "triples": [
+        "Four colors. One tap. Instant calm.",
+        "Tint Control. Audio. Knicks.",
+        "Run light. Hear everything.",
+        "Built for miles, not couch time."
+      ],
+      "benefit_first": [
+        "Adjust lens tint in 0.1 seconds (not 'Eclipse™ electrochromic lens technology')",
+        "From bright to blackout in 0.1s (not '63% to 17% VLT range')"
+      ],
+      "problem_solution": [
+        "Going in and out of tunnels used to mean swapping glasses constantly. Now I just slide and go.",
+        "From city chaos to instant calm in 0.1 seconds."
+      ],
+      "one_frame_many_uses": [
+        "One frame. Four vibes.",
+        "One frame. Long session.",
+        "One frame for every version of you."
+      ],
+      "action_verb_openers": ["Run", "Tap", "Slide", "Lock", "Hear", "See", "Stay", "Built", "Train", "Made"]
+    },
+    "vocabulary": {
+      "signature": [
+        "Instant",
+        "Tap",
+        "Slide",
+        "Tint",
+        "Control",
+        "One frame",
+        "Be different. See different.",
+        "Adapt in a tap"
+      ],
+      "banned": [
+        "Game-changing",
+        "Revolutionary",
+        "Unleash",
+        "Next-level",
+        "Push your limits",
+        "Go further",
+        "Take it to the next level",
+        "Disrupting [category]",
+        "World-class (when not literal)",
+        "Best in class (when not measurable)"
+      ],
+      "tones_to_avoid": [
+        "Generic sport-brand clichés",
+        "Discount/clearance language",
+        "Over-technical spec dumps",
+        "Apologetic / hedging",
+        "Try-hard punchlines",
+        "Luxury-adjacent clichés ('crafted for the discerning')"
+      ]
+    },
+    "reading_level": {
+      "hook": "Grade 5–7",
+      "body": "Grade 7–9",
+      "internal": "Grade 9–11"
+    },
+    "in_doubt_checklist": [
+      "Would Marbury say this out loud?",
+      "Does this lead with the benefit or the feature? (Choose benefit.)",
+      "Could a competitor have written this same line? (If yes, rewrite.)",
+      "Is there a banned word in it?",
+      "Would a 14-year-old understand it?"
+    ]
+  },
+
+  "tagline_library": {
+    "hero": [
+      "Be different. See different.",
+      "Adapt in a tap.",
+      "One frame. Infinite possibilities.",
+      "The lens that keeps up with you.",
+      "One tap. Total visual control.",
+      "Vision that adapts to your energy.",
+      "Light or dark. You choose.",
+      "Next-Gen Lenses"
+    ],
+    "by_product": {
+      "music_shield": [
+        "Run light. Hear everything.",
+        "Audio on. Head up.",
+        "One frame. Long session.",
+        "Stay in stride, stay aware.",
+        "Turn up the pace, not the volume.",
+        "Built for miles, not couch time."
+      ],
+      "aura_calm": [
+        "Tap into calm.",
+        "One frame. Four vibes.",
+        "From city chaos to instant calm.",
+        "Calm on command."
+      ],
+      "aura_energy": [
+        "Tap into energy.",
+        "Energy on command.",
+        "Energy at your fingertips.",
+        "Your energy, rendered in color."
+      ],
+      "aura_audio": [
+        "Four colors. Premium audio. One tap.",
+        "Tap for color. Swipe for sound.",
+        "Hear the world. Change the view."
+      ],
+      "knicks": [
+        "Tint Control. Audio. Knicks.",
+        "Built in Blue. Tuned for Orange."
+      ],
+      "general": [
+        "From shadow to shine in a tap.",
+        "Lenses that adapt before you can blink.",
+        "Beyond transition. Beyond the ordinary."
+      ]
+    }
+  },
+
+  "product_universe": [
+    {
+      "name": "Aura",
+      "tagline": "One frame. Four colors.",
+      "hero_feature": "Four-color switch (the hook — frame it as mood, identity, instant transformation)",
+      "positioning": "Mood-changing eyewear. The lens palette choice is the mood choice.",
+      "press": "TIME Magazine Best Invention"
+    },
+    {
+      "name": "Music Shield Gen 2",
+      "tagline": "Run light. Hear everything.",
+      "hero_feature": "Tint slider (always the hero) — audio is a supporting benefit, not the lead",
+      "positioning": "Tint-adjustable sport sunglasses with open-ear audio"
+    },
+    {
+      "name": "Knicks Edition",
+      "tagline": "Tint Control. Audio. Knicks.",
+      "hero_feature": "Co-branded Knicks colorway with Marbury",
+      "positioning": "Built in Blue. Tuned for Orange."
+    },
+    {
+      "name": "Prismatic",
+      "tagline": "TBD",
+      "hero_feature": "TBD",
+      "positioning": "TBD"
+    }
+  ],
+
+  "ambassadors": [
+    {
+      "name": "Stephon Marbury",
+      "role": "Chief Brand Officer · Two-time NBA All-Star",
+      "voice": "Authentic, direct, high-energy, declarative",
+      "signature_phrases": ["C'mon now!", "Chamelo, baby", "I'm telling you"],
+      "works": "Blind reactions, genuine surprise, off-the-cuff testimonials, basketball references",
+      "doesnt_work": "Scripted product walkthroughs, generic hype-man energy"
+    },
+    {
+      "name": "Alycia Baumgardner",
+      "role": "Boxer · 'The Bomb'",
+      "voice": "Mental-performance angle, champion mentality",
+      "signature_phrases": ["Boxing is 90% mental", "Train hard, fight easy", "Heels on, gloves on"],
+      "works": "Training environments, championship credibility, women's empowerment without preaching",
+      "doesnt_work": "Forcing a fashion-first frame on a fighter"
+    },
+    {
+      "name": "Jose Reyes",
+      "role": "Ambassador",
+      "voice": "TBD"
+    },
+    {
+      "name": "Mohamed Ramadan",
+      "role": "Ambassador",
+      "voice": "TBD"
+    },
+    {
+      "name": "Omari Hardwick",
+      "role": "Ambassador",
+      "voice": "TBD"
+    },
+    {
+      "name": "Patrick Mouratoglou",
+      "role": "Ambassador",
+      "voice": "TBD"
+    }
+  ],
+
+  "navigation_observed": {
+    "primary": [
+      "Shop",
+      "New Arrivals",
+      "Accessories",
+      "Celebrity Ambassadors",
+      "Innovation",
+      "Our Story",
+      "Contact Us",
+      "Find In Store",
+      "Account",
+      "FAQs"
+    ],
+    "shop_subcategories": ["Sport", "Lifestyle", "Prismatic"]
+  },
+
+  "ai_content_policy": {
+    "permitted": true,
+    "rules": [
+      "Soul ID training required for any AI-generated human likeness — no generic AI faces",
+      "Figma finishing required for any AI-generated visual — no raw Higgsfield/kie.ai outputs",
+      "AI-generated voices are NOT used in paid ads — real ambassadors, real VO, real customers only",
+      "Every AI-generated ad carries Meta's AI Content Label per policy",
+      "Bar is 'indistinguishable from production photography', not 'good enough for AI'"
+    ]
+  }
+}
