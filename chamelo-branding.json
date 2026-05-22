@@ -1,15 +1,22 @@
 {
   "_meta": {
-    "version": "0.1",
+    "version": "0.2",
     "last_updated": "2026-05-22",
     "sources": [
-      "chamelo.com (homepage scrape)",
-      "chamelo.com/pages/about-us",
-      "01_brand-overview.md (Brand Brain)",
-      "02_voice-guide.md (Brand Brain)"
+      "brand-brain/01_brand-overview.md",
+      "brand-brain/02_voice-guide.md",
+      "brand-brain/03-product-specs-index.md",
+      "brand-brain/03-aura.md",
+      "brand-brain/03-music-shield-gen-2.md",
+      "brand-brain/03-lion-city.md",
+      "brand-brain/03-infinity.md",
+      "brand-brain/03-zurix.md",
+      "brand-brain/03-golf-shield.md",
+      "brand-brain/04-consumer-language.md",
+      "brand-brain/05-use-case-messaging.md"
     ],
     "owner": "Chase · CCO",
-    "notes": "Living document. Update as the brand system evolves. Colors marked 'approximate' are visual estimates — confirm against the official brand book before locking."
+    "notes": "Source of truth for everything downstream — page, campaigns, ad copy, JSON consumers. Individual product files are authoritative for specs; this JSON is the cross-product summary."
   },
 
   "identity": {
@@ -18,260 +25,128 @@
     "category": "Smart eyewear · tint-adjustable and color-changing lenses",
     "tagline_primary": "Be different. See different.",
     "positioning_oneliner": "Instant tint and color-changing glasses.",
-    "wedge": "Direct, on-demand tint control — not auto-reactive, not Transitions. Tap or slide. The lens keeps up.",
+    "wedge": "Direct, on-demand control over your lens — tap or slide. Not auto-reactive. Not Transitions. The lens keeps up.",
     "real_product": "We don't sell sunglasses. We sell control — over light, over environment, over how you see the world.",
     "mission_short": "Chamelo is leading a new era of smart eyewear, leveraging cutting-edge technology to empower people to see the world on their terms.",
-    "vision": "A future of eyewear that fuses cutting-edge technology with personal style, redefining the industry and empowering individuals to express their unique vision of the world.",
-    "essence": "Game-changing, performance-enhancing, and mood-boosting sunglasses. Made with next-gen Chamelo® lenses, created to help you see better."
+    "essence": "Game-changing, performance-enhancing, and mood-boosting sunglasses. Made with next-gen Chamelo® lenses."
   },
 
   "trust": {
     "rating": "4.7",
     "review_count": "9,200+",
     "customer_count": "100,000+",
-    "press_awards": ["TIME Magazine Best Invention"],
+    "amazon_rating": "4.0★ (third-party validation — same product, different fulfillment)",
+    "press_awards": ["TIME Magazine Best Invention (Aura)"],
+    "expert_endorsement": "Dr. Jay Schwartz · Phoenix Suns ophthalmologist",
     "guarantee": "30-day money-back",
     "warranty": "1-year manufacturer's",
     "shipping": "Fast and free",
     "trial": "30-day free trial"
   },
 
-  "colors": {
-    "_note": "Approximate hex codes derived from visual inspection of chamelo.com. Replace with exact brand-book values when confirmed.",
-    "primary": {
-      "ink": "#0A0A0A",
-      "paper": "#FFFFFF"
+  "lens_technologies": {
+    "_note": "Five proprietary lens technologies. Always use the trademarked name in customer copy — never the engineering name.",
+    "eclipse": {
+      "name": "Eclipse™",
+      "type": "Tint-adjusting (clear ↔ dark)",
+      "control": "Manual slider on temple · auto-activates when arms open",
+      "response_time": "0.1 seconds",
+      "speed_claim": "1,800× faster than photochromic",
+      "neutrality": "True, neutral black at all tint levels",
+      "products": ["Music Shield Gen 2", "Shield", "Aroza", "Golf Shield", "Prime"]
     },
-    "neutrals": {
-      "soft_white": "#FAFAFA",
-      "stone": "#EFEDE8",
-      "line": "#E5E3DD",
-      "mid": "#6B6B68",
-      "muted": "#9A9A95"
+    "prismatic": {
+      "name": "Prismatic™",
+      "type": "Color-changing — four hues per palette",
+      "control": "Touch on right temple",
+      "world_first_claim": "World's first touch-controlled color-changing sunglasses",
+      "palettes": {
+        "calm": ["Crystal", "Indigo", "Ruby", "Violet"],
+        "energy": ["Clear", "Yellow", "Pink", "Orange"]
+      },
+      "products": ["Aura", "Aura Audio", "Aura Rx", "by O Lens"]
     },
-    "accents": {
-      "aura_gold": "#C9A24B",
-      "aura_gold_soft": "#F2E6C8",
-      "fire": "#E04A2A",
-      "knicks_blue": "#1D3D8A",
-      "knicks_orange": "#F58426"
+    "hvl": {
+      "name": "HVL™",
+      "engineering_name": "Guest-host liquid crystal (internal use only)",
+      "type": "Touch-controlled tint",
+      "control": "Touch on right temple (cycles 4 levels)",
+      "products": ["Lion City", "Lion City Rx", "Infinity", "Zurix"]
     },
-    "ui": {
-      "background": "#FFFFFF",
-      "background_alt": "#FAFAFA",
-      "text": "#0A0A0A",
-      "text_mid": "#4A4A48",
-      "border": "#E5E3DD",
-      "accent": "#C9A24B"
-    }
+    "alpha": {
+      "name": "Alpha™",
+      "engineering_name": "Twisted nematic liquid crystal (internal use only)",
+      "type": "Tint · varied modes (some polarized, some solar)",
+      "products": ["Dusk (polarized)", "Veil", "Falcon (built-in de-polarizer, solar-powered)"]
+    },
+    "by_o": {
+      "name": "by O™",
+      "type": "Blue-light blocking variant (circadian protocol)",
+      "states": ["Warm Crystal", "Yellow", "Orange", "Red"],
+      "products": ["by O Lens (Aura frame with by O palette)"]
+    },
+    "claim_rule": "Lead with the benefit, not the spec. The 0.1 seconds is the punchline, never the headline."
   },
 
-  "typography": {
-    "_note": "Chamelo.com runs on Shopify; the live site uses a clean grotesque sans for UI and body. Exact font family not confirmed in scrape — best stand-ins below until brand book confirms.",
-    "headline_family": "Fraunces, Georgia, 'Times New Roman', serif",
-    "headline_style": "Editorial serif used sparingly for premium headlines. Optical-size aware. Italic for sub-heads and accent phrases.",
-    "ui_family": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-    "ui_style": "Geometric grotesque. Medium weight for navigation, regular for body, semibold for stats.",
-    "mono_family": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace",
-    "scale": {
-      "display": "clamp(56px, 9vw, 120px)",
-      "h1": "clamp(40px, 6vw, 72px)",
-      "h2": "clamp(28px, 4vw, 44px)",
-      "h3": "clamp(20px, 2.5vw, 28px)",
-      "body": "16px",
-      "small": "13px",
-      "micro": "11px"
-    },
-    "letter_spacing": {
-      "display": "-0.02em",
-      "label": "0.14em (uppercase)",
-      "body": "0"
-    }
-  },
-
-  "logo": {
-    "type": "Wordmark only — no separate symbol/glyph",
-    "asset_path_observed": "/cdn/shop/files/Footer-Logo-New.svg",
-    "typography": "Custom or modified geometric sans (to be confirmed against brand book)",
-    "treatments": [
-      "Black wordmark on white background (primary)",
-      "White wordmark on black background (footer, dark sections)"
+  "product_catalog": {
+    "sport": [
+      { "name": "Music Shield Gen 2", "tech": "Eclipse™", "vlt": "63% to 17%", "audio": true, "price": "$199 (MSRP $299)", "status": "Active hero · NBA Team Editions launching" },
+      { "name": "Shield", "tech": "Eclipse™", "vlt": "54% to 17%", "audio": false, "price": "$199", "status": "Music Shield's lighter partner" },
+      { "name": "Golf Shield", "tech": "Eclipse™", "vlt": "54% to 17%", "audio": false, "price": "TBD", "status": "About to push · Dick's retail" },
+      { "name": "Aroza", "tech": "Eclipse™", "vlt": "45% to 13% (goggle)", "audio": false, "price": "$349", "status": "Year-round retail · winter-weighted" },
+      { "name": "Falcon", "tech": "Alpha™ + de-polarizer", "vlt": "34% to 8%", "audio": false, "price": "$199", "status": "Standard · solar-powered, no battery" },
+      { "name": "Prime", "tech": "Confirm", "vlt": "45% to 9%", "audio": "Confirm", "price": "On sale", "status": "Active" }
     ],
-    "clear_space": "TBD — match the wordmark height as minimum padding on all sides until brand book confirms",
-    "minimum_size": "TBD"
-  },
-
-  "voice": {
-    "pillars": [
-      {
-        "name": "Confident and Knowledgeable",
-        "summary": "Authoritative, bold, approachable. Make complex tech easy to understand. Skip hedging. Make claims specific.",
-        "do": ["Lead with what we know", "Use exact specs ('0.1 seconds', '63% to 17% VLT')", "Sound certain"],
-        "dont": ["Hedge ('maybe', 'kind of', 'we think')", "Vague claims ('fast', 'wide range')"]
-      },
-      {
-        "name": "Fun and Young-at-Heart",
-        "summary": "Lively, youthful energy. Light-hearted, playful, vibrant. Pattern-interrupt copy wins on social.",
-        "do": ["Single exclamation point when it lands", "Pattern-interrupts ('Sunglasses, but they listen.')", "Humor only when it works"],
-        "dont": ["Double exclamations", "Forced humor"]
-      },
-      {
-        "name": "Passionate and Personal",
-        "summary": "Warm, engaging, personal. Connect, don't sell. Use real customer names.",
-        "do": ["Talk like a friend", "Quote real customers", "Add a human touch"],
-        "dont": ["Corporate jargon", "PR-speak"]
-      },
-      {
-        "name": "Keep It Real",
-        "summary": "Authentic, sincere, straightforward. Boldness with integrity. Same energy as Stephon Marbury.",
-        "do": ["Let the product speak", "Acknowledge limitations", "Let ambassadors sound like themselves"],
-        "dont": ["Oversell", "Script ambassadors out of their natural voice"]
-      }
+    "lifestyle": [
+      { "name": "Lion City", "tech": "HVL™", "vlt": "48% to 8%", "audio": true, "price": "$349", "status": "Pushing · Tortoise Trio anchor · Italian acetate" },
+      { "name": "Lion City Rx", "tech": "HVL™ + single-vision Rx", "vlt": "48% to 8%", "audio": true, "price": "$349 + $199–$299 Rx", "status": "World's first electronic tint-changing Rx sunglasses" },
+      { "name": "Infinity", "tech": "HVL™", "vlt": "48% to 8%", "audio": true, "price": "$349", "status": "Pushing · Tortoise Trio · bold rectangular" },
+      { "name": "Zurix", "tech": "HVL™", "vlt": "50% to 10%", "audio": false, "price": "$199", "status": "Pushing · Tortoise Trio · women's market push" },
+      { "name": "Dusk", "tech": "Alpha™ (polarized)", "vlt": "38% to 4%", "audio": true, "price": "TBD", "status": "Back from brief unlisting" },
+      { "name": "Veil", "tech": "Alpha™", "vlt": "37% to 8%", "audio": "Confirm", "price": "TBD", "status": "Sold out · returning" }
     ],
-    "structures": {
-      "triples": [
-        "Four colors. One tap. Instant calm.",
-        "Tint Control. Audio. Knicks.",
-        "Run light. Hear everything.",
-        "Built for miles, not couch time."
-      ],
-      "benefit_first": [
-        "Adjust lens tint in 0.1 seconds (not 'Eclipse™ electrochromic lens technology')",
-        "From bright to blackout in 0.1s (not '63% to 17% VLT range')"
-      ],
-      "problem_solution": [
-        "Going in and out of tunnels used to mean swapping glasses constantly. Now I just slide and go.",
-        "From city chaos to instant calm in 0.1 seconds."
-      ],
-      "one_frame_many_uses": [
-        "One frame. Four vibes.",
-        "One frame. Long session.",
-        "One frame for every version of you."
-      ],
-      "action_verb_openers": ["Run", "Tap", "Slide", "Lock", "Hear", "See", "Stay", "Built", "Train", "Made"]
-    },
-    "vocabulary": {
-      "signature": [
-        "Instant",
-        "Tap",
-        "Slide",
-        "Tint",
-        "Control",
-        "One frame",
-        "Be different. See different.",
-        "Adapt in a tap"
-      ],
-      "banned": [
-        "Game-changing",
-        "Revolutionary",
-        "Unleash",
-        "Next-level",
-        "Push your limits",
-        "Go further",
-        "Take it to the next level",
-        "Disrupting [category]",
-        "World-class (when not literal)",
-        "Best in class (when not measurable)"
-      ],
-      "tones_to_avoid": [
-        "Generic sport-brand clichés",
-        "Discount/clearance language",
-        "Over-technical spec dumps",
-        "Apologetic / hedging",
-        "Try-hard punchlines",
-        "Luxury-adjacent clichés ('crafted for the discerning')"
-      ]
-    },
-    "reading_level": {
-      "hook": "Grade 5–7",
-      "body": "Grade 7–9",
-      "internal": "Grade 9–11"
-    },
-    "in_doubt_checklist": [
-      "Would Marbury say this out loud?",
-      "Does this lead with the benefit or the feature? (Choose benefit.)",
-      "Could a competitor have written this same line? (If yes, rewrite.)",
-      "Is there a banned word in it?",
-      "Would a 14-year-old understand it?"
+    "prismatic": [
+      { "name": "Aura", "tech": "Prismatic™", "vlt": "65% to 20%", "audio": false, "price": "$385", "status": "Hero · best paid performer" },
+      { "name": "Aura Audio", "tech": "Prismatic™ + open-ear audio", "vlt": "62% to 21%", "audio": true, "price": "$485", "status": "Premium upgrade" },
+      { "name": "Aura Rx", "tech": "Prismatic™ + single-vision Rx", "vlt": "65% to 20%", "audio": false, "price": "$385 + Rx", "status": "World's only color-changing Rx" },
+      { "name": "by O Lens", "tech": "Prismatic™ + by O™", "vlt": "60% to 25%", "audio": false, "price": "TBD", "status": "Pre-launch · Omari Hardwick · biohacking circadian" }
     ]
   },
 
-  "tagline_library": {
-    "hero": [
-      "Be different. See different.",
-      "Adapt in a tap.",
-      "One frame. Infinite possibilities.",
-      "The lens that keeps up with you.",
-      "One tap. Total visual control.",
-      "Vision that adapts to your energy.",
-      "Light or dark. You choose.",
-      "Next-Gen Lenses"
-    ],
-    "by_product": {
-      "music_shield": [
-        "Run light. Hear everything.",
-        "Audio on. Head up.",
-        "One frame. Long session.",
-        "Stay in stride, stay aware.",
-        "Turn up the pace, not the volume.",
-        "Built for miles, not couch time."
-      ],
-      "aura_calm": [
-        "Tap into calm.",
-        "One frame. Four vibes.",
-        "From city chaos to instant calm.",
-        "Calm on command."
-      ],
-      "aura_energy": [
-        "Tap into energy.",
-        "Energy on command.",
-        "Energy at your fingertips.",
-        "Your energy, rendered in color."
-      ],
-      "aura_audio": [
-        "Four colors. Premium audio. One tap.",
-        "Tap for color. Swipe for sound.",
-        "Hear the world. Change the view."
-      ],
-      "knicks": [
-        "Tint Control. Audio. Knicks.",
-        "Built in Blue. Tuned for Orange."
-      ],
-      "general": [
-        "From shadow to shine in a tap.",
-        "Lenses that adapt before you can blink.",
-        "Beyond transition. Beyond the ordinary."
+  "active_collections": {
+    "tortoise_trio": {
+      "name": "Tortoise Trio",
+      "tagline": "Italian acetate. Japanese lens technology.",
+      "products": ["Lion City", "Infinity", "Zurix"],
+      "notes": "Lion City and Infinity are Italian acetate across all colorways; Zurix is acetate ONLY in the tortoise variant — standard Zurix is TR90.",
+      "approved_lines": [
+        "Italian acetate. Japanese lens technology.",
+        "Italian frames. Lenses engineered in Japan.",
+        "Hand-finished Italian acetate. Japanese liquid crystal film.",
+        "Smart glasses that don't look like smart glasses.",
+        "Classic frame styles, upgraded."
       ]
-    }
+    },
+    "nba_team_editions": {
+      "name": "Music Shield Gen 2 NBA Team Editions",
+      "base_product": "Music Shield Gen 2",
+      "available_now": ["New York Knicks"],
+      "pre_sale_june_2026": ["San Antonio Spurs", "Boston Celtics", "Los Angeles Lakers", "Golden State Warriors", "Phoenix Suns", "Miami Heat", "Chicago Bulls", "Oklahoma City Thunder"],
+      "license_rules": "Paid usage of NBA marks/logos/player likenesses is restricted by license. Always check claims register before publishing. Marbury is CBO — fine to reference; other players are not endorsing.",
+      "approved_lines": [
+        "Officially Licensed. Tint Control. Knicks.",
+        "Built in Blue. Tuned for Orange.",
+        "Marbury's team. Marbury's glasses."
+      ]
+    },
+    "ambassador_editions": [
+      { "ambassador": "Alycia Baumgardner", "edition": "Bomb Edition", "base": "Shield + Music Shield Gen 2", "colorway": "Slate Blue + Gold · Amber high-contrast lens" },
+      { "ambassador": "Jose Reyes", "edition": "La Melaza", "base": "Shield + Music Shield Gen 2" },
+      { "ambassador": "Geraldo Perdomo", "edition": "Domo", "base": "Shield only" },
+      { "ambassador": "Omari Hardwick", "edition": "by O Lens", "base": "Aura frame + by O Prismatic palette", "positioning": "Biohacking · circadian protocol" },
+      { "ambassador": "Patrick Mouratoglou", "edition": "Tennis line", "status": "In development · tied to French Open / Wimbledon / US Open" }
+    ]
   },
-
-  "product_universe": [
-    {
-      "name": "Aura",
-      "tagline": "One frame. Four colors.",
-      "hero_feature": "Four-color switch (the hook — frame it as mood, identity, instant transformation)",
-      "positioning": "Mood-changing eyewear. The lens palette choice is the mood choice.",
-      "press": "TIME Magazine Best Invention"
-    },
-    {
-      "name": "Music Shield Gen 2",
-      "tagline": "Run light. Hear everything.",
-      "hero_feature": "Tint slider (always the hero) — audio is a supporting benefit, not the lead",
-      "positioning": "Tint-adjustable sport sunglasses with open-ear audio"
-    },
-    {
-      "name": "Knicks Edition",
-      "tagline": "Tint Control. Audio. Knicks.",
-      "hero_feature": "Co-branded Knicks colorway with Marbury",
-      "positioning": "Built in Blue. Tuned for Orange."
-    },
-    {
-      "name": "Prismatic",
-      "tagline": "TBD",
-      "hero_feature": "TBD",
-      "positioning": "TBD"
-    }
-  ],
 
   "ambassadors": [
     {
@@ -284,58 +159,101 @@
     },
     {
       "name": "Alycia Baumgardner",
-      "role": "Boxer · 'The Bomb'",
+      "role": "Boxer · 'The Bomb' · Bomb Edition",
       "voice": "Mental-performance angle, champion mentality",
       "signature_phrases": ["Boxing is 90% mental", "Train hard, fight easy", "Heels on, gloves on"],
       "works": "Training environments, championship credibility, women's empowerment without preaching",
       "doesnt_work": "Forcing a fashion-first frame on a fighter"
     },
-    {
-      "name": "Jose Reyes",
-      "role": "Ambassador",
-      "voice": "TBD"
-    },
-    {
-      "name": "Mohamed Ramadan",
-      "role": "Ambassador",
-      "voice": "TBD"
-    },
-    {
-      "name": "Omari Hardwick",
-      "role": "Ambassador",
-      "voice": "TBD"
-    },
-    {
-      "name": "Patrick Mouratoglou",
-      "role": "Ambassador",
-      "voice": "TBD"
-    }
+    { "name": "Jose Reyes", "edition": "La Melaza", "file": "03-jose-reyes.md (pending)" },
+    { "name": "Geraldo Perdomo", "edition": "Domo", "file": "03-geraldo-perdomo.md (pending)" },
+    { "name": "Omari Hardwick", "edition": "by O Lens", "positioning": "Biohacking · circadian", "file": "03-by-o-lens.md (pending)" },
+    { "name": "Patrick Mouratoglou", "edition": "Tennis line", "status": "In development", "file": "03-tennis-line.md (pending)" }
   ],
 
-  "navigation_observed": {
-    "primary": [
-      "Shop",
-      "New Arrivals",
-      "Accessories",
-      "Celebrity Ambassadors",
-      "Innovation",
-      "Our Story",
-      "Contact Us",
-      "Find In Store",
-      "Account",
-      "FAQs"
+  "voice": {
+    "pillars": [
+      { "name": "Confident and Knowledgeable", "do": ["Lead with what we know", "Use exact specs ('0.1 seconds', '63% to 17% VLT')"], "dont": ["Hedge", "Vague claims"] },
+      { "name": "Fun and Young-at-Heart", "do": ["Single exclamation when it lands", "Pattern-interrupts"], "dont": ["Double exclamations", "Forced humor"] },
+      { "name": "Passionate and Personal", "do": ["Talk like a friend", "Quote real customers", "Use real names"], "dont": ["Corporate jargon", "PR-speak"] },
+      { "name": "Keep It Real", "do": ["Let the product speak", "Acknowledge limitations"], "dont": ["Oversell", "Script ambassadors out of their voice"] }
     ],
-    "shop_subcategories": ["Sport", "Lifestyle", "Prismatic"]
+    "customer_words_to_use": {
+      "_critical": "Use the customer's exact word, not our marketing equivalent.",
+      "instant": "65% of Amazon positives and 63% of Trustpilot positives use 'instant' or 'almost instant' — never 'fast', 'rapid', or 'lightning-quick'",
+      "game_changer": "Most repeated customer phrase — use it (customer voice, even though 'game-changing' is banned in brand voice)",
+      "forgot_i_was_wearing_them": "Lightweight phrasing customers actually use",
+      "are_those_changing_color": "The implied Aura compliment — use as a hook",
+      "dont_have_to_think_about_it": "The everyday-utility phrasing under-leveraged in current creative"
+    },
+    "banned_phrases": [
+      "Game-changing (in brand voice — customer voice OK)",
+      "Revolutionary",
+      "Unleash",
+      "Next-level",
+      "Push your limits",
+      "Go further",
+      "Take it to the next level",
+      "Disrupting [category]",
+      "World-class (when not literal)",
+      "Best in class (when not measurable)",
+      "Smart (use 'adaptive' or 'almost-smart' — customer phrase)",
+      "Oversized (banned for Zurix specifically)",
+      "Polarized (Falcon — anti-claim, generates 1-star reviews)",
+      "Premium build (at $200+ until temple-arm fix ships)",
+      "Improve your game / lower your score (Golf Shield — unsupportable)"
+    ]
+  },
+
+  "universal_writing_rules": {
+    "vlt_format": "Larger (clearer) number first: '63% to 17%' NOT '17% to 63%'",
+    "uv_format": "Always '100% UVA/UVB protection.' Never '99.9%' in customer copy.",
+    "speed": "Use '0.1 seconds' when accuracy matters. Use 'instant' or 'instantly' in hero copy.",
+    "audio": "Always 'open-ear audio' or 'Bluetooth audio.' Never 'bone conduction' or 'headphones.'",
+    "charging": "Use 'magnetic charging cable.' Do NOT specify USB-A or USB-C until older inventory clears.",
+    "customer_count": "Brand-level: '100,000+ customers.' The 50K+ figure is Music Shield Gen 1 unit sales only.",
+    "bundles": "Never bundle framing. Every product is an individual SKU.",
+    "pricing": "Reference both MSRP and current selling price when length allows: '$199 (MSRP $299)'",
+    "lens_tech_naming": "Always use trademarked name (Eclipse™, Prismatic™, HVL™, Alpha™, by O™) in customer copy. Never the engineering name."
+  },
+
+  "audiences": {
+    "_note": "Full audience messaging lives in 05-use-case-messaging.md. Summary below.",
+    "validated": [
+      "Runners (dawn/dusk light changes, open-ear awareness)",
+      "Cyclists (road + MTB + commuter)",
+      "Commuters (tunnels + indoor/outdoor)",
+      "Aura compliments-driven style buyer (dominant Aura pattern)",
+      "Golfers (shade-to-sun, half-rim downward view)",
+      "Pickleball / racket sports",
+      "Premium daily / professional (Lion City)",
+      "Skiers (Aroza — sunny day, NOT flat light)",
+      "Triathletes (Shield — no audio for race rules)"
+    ],
+    "emerging": [
+      "Truck drivers (n=1 verbatim, strongest single anecdote)",
+      "Indoor/outdoor workers (most under-leveraged angle)",
+      "Open-visor motorcyclists",
+      "Convertible drivers",
+      "Farmers / yardwork",
+      "Photochromic Rx disappointed (150M+ TAM)",
+      "Ray-Ban Meta privacy skeptic (no camera / no AI)",
+      "NBA fans (team editions)",
+      "Gift buyers (seasonal)"
+    ],
+    "legal_review_required": [
+      "Light-sensitive / migraine / post-cataract — medical-adjacent claims"
+    ]
   },
 
   "ai_content_policy": {
     "permitted": true,
     "rules": [
       "Soul ID training required for any AI-generated human likeness — no generic AI faces",
-      "Figma finishing required for any AI-generated visual — no raw Higgsfield/kie.ai outputs",
-      "AI-generated voices are NOT used in paid ads — real ambassadors, real VO, real customers only",
+      "Figma finishing required for any AI-generated visual — no raw Higgsfield / kie.ai outputs",
+      "AI-generated voices NOT used in paid ads — real ambassadors, real VO, real customers only",
       "Every AI-generated ad carries Meta's AI Content Label per policy",
-      "Bar is 'indistinguishable from production photography', not 'good enough for AI'"
+      "Bar: indistinguishable from production photography"
     ]
   }
 }

@@ -7,7 +7,7 @@
   <meta name="description" content="Chamelo Creative Studio — the internal home for brand identity, voice, campaigns, and the AI-assisted ad pipeline." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
   <header class="topbar">
     <div class="topbar__inner">
       <a class="topbar__brand" href="./">
-        <span class="brand__name">CHAMELO</span>
+        <img class="brand__logo" src="./assets/logo.svg" alt="Chamelo" />
         <span class="brand__sep">·</span>
         <span class="brand__suffix">Creative Studio</span>
       </a>
@@ -37,57 +37,39 @@
       <div class="hero__inner">
         <p class="eyebrow">Internal · Creative Studio</p>
         <h1 class="hero__title">
-          <span class="hero__title-main">Be different.</span>
-          <span class="hero__title-main">See different.</span>
+          <span class="hero__title-line">Be different.</span>
+          <span class="hero__title-line hero__title-line--gradient">See different.</span>
         </h1>
         <p class="hero__deck">
-          Instant tint and color-changing glasses. Chamelo is leading a new era
-          of smart eyewear — direct, on-demand control over light, color, and
-          state. This is the internal home for the brand system and every
+          Instant tint and color-changing glasses. Chamelo is leading a new
+          era of smart eyewear — direct, on-demand control over light, color,
+          and state. This is the internal home for the brand system and every
           campaign built on top of it.
         </p>
         <div class="hero__cta">
           <a href="#brand" class="btn btn--primary">Brand system</a>
           <a href="#campaigns" class="btn btn--ghost">Campaigns →</a>
         </div>
-      </div>
-    </section>
 
-    <!-- TRUST BAR -->
-    <section class="trustbar">
-      <div class="trustbar__inner">
-        <div><span class="trustbar__stat">TIME</span> Best Invention</div>
-        <div><span class="trustbar__stat">4.7★</span> rating</div>
-        <div><span class="trustbar__stat">9,200+</span> reviews</div>
-        <div><span class="trustbar__stat">100K+</span> customers</div>
-        <div><span class="trustbar__stat">30-day</span> guarantee</div>
+        <ul class="hero__stats">
+          <li><span class="hero__stat-num">TIME</span><span class="hero__stat-label">Best Invention</span></li>
+          <li><span class="hero__stat-num">4.7★</span><span class="hero__stat-label">9,200+ reviews</span></li>
+          <li><span class="hero__stat-num">100K+</span><span class="hero__stat-label">customers</span></li>
+          <li><span class="hero__stat-num">30-day</span><span class="hero__stat-label">guarantee</span></li>
+        </ul>
       </div>
     </section>
 
     <!-- 01 · BRAND -->
     <section class="section" id="brand">
       <div class="section__head">
-        <p class="section__num">01</p>
-        <h2 class="section__title">Brand</h2>
+        <p class="section__label">01 · Brand</p>
+        <h2 class="section__title">We don't sell sunglasses. <br/><span class="muted">We sell control.</span></h2>
         <p class="section__deck">
-          Pulled from <code>01_brand-overview.md</code> and synced with
-          <code>chamelo-branding.json</code>. Source of truth for every
-          downstream campaign.
-        </p>
-      </div>
-
-      <div class="prose">
-        <p class="lede">
-          We don't sell sunglasses. We sell <em>control</em> — over light, over
-          environment, over how you see the world.
-        </p>
-        <p>
-          Chamelo pioneered the tint-adjustable and color-changing lens
-          category. Proprietary liquid crystal film tech lets wearers change
-          tint or color instantly — manually, automatically, or via app. Named
-          a TIME Magazine Best Invention. We sit at the intersection of
-          performance sport and lifestyle, with premium pricing and a
-          technology-first identity.
+          Over light. Over environment. Over how you see the world. Chamelo
+          pioneered the tint-adjustable and color-changing lens category. Smart
+          eyewear with direct, on-demand control — manually, automatically, or
+          via app.
         </p>
       </div>
 
@@ -116,8 +98,7 @@
         <article class="card">
           <p class="card__label">Community</p>
           <p class="card__body">
-            A sense of belonging. Customer feedback drives the product
-            roadmap.
+            A sense of belonging. Customer feedback drives the product roadmap.
           </p>
         </article>
       </div>
@@ -126,11 +107,11 @@
     <!-- 02 · VOICE -->
     <section class="section section--alt" id="voice">
       <div class="section__head">
-        <p class="section__num">02</p>
-        <h2 class="section__title">Voice</h2>
+        <p class="section__label">02 · Voice</p>
+        <h2 class="section__title">Confident. Fun. <br/><span class="muted">Passionate. Real.</span></h2>
         <p class="section__deck">
-          Confident. Fun. Passionate. Real. Short declarative triples and
-          benefit-first phrasing. Same energy as Stephon Marbury.
+          Short declarative triples. Benefit-first phrasing. Same energy as
+          Stephon Marbury. Pulled from <code>brand-brain/02_voice-guide.md</code>.
         </p>
       </div>
 
@@ -160,11 +141,12 @@
     <!-- 03 · PRODUCTS -->
     <section class="section" id="products">
       <div class="section__head">
-        <p class="section__num">03</p>
-        <h2 class="section__title">Product Universe</h2>
+        <p class="section__label">03 · Products</p>
+        <h2 class="section__title">Five lens technologies. <br/><span class="muted">One wedge.</span></h2>
         <p class="section__deck">
-          Four product lines. Each carries the same wedge — instant, direct,
-          on-demand control — expressed through a different hero feature.
+          Eclipse™ · Prismatic™ · HVL™ · Alpha™ · by O™. Each lives in a
+          different product family, expressing the same wedge — instant,
+          direct, on-demand control.
         </p>
       </div>
 
@@ -172,53 +154,56 @@
         <article class="lineup__row">
           <div class="lineup__media"><span class="lineup__slot">AURA</span></div>
           <div class="lineup__copy">
-            <p class="lineup__label">Aura</p>
-            <h3 class="lineup__headline">One frame. Four colors.</h3>
+            <p class="lineup__label">Aura · Prismatic · Prismatic™</p>
+            <h3 class="lineup__headline">Your mood, rendered in color.</h3>
             <p class="lineup__body">
-              Mood-changing eyewear. The four-color switch is the hook. Frame
-              it around mood, identity, instant transformation. TIME Magazine
-              Best Invention.
+              Mood-changing eyewear. The world's first touch-controlled
+              color-changing sunglasses. TIME Magazine Best Invention. Calm
+              (Crystal · Indigo · Ruby · Violet) or Energy (Clear · Yellow ·
+              Pink · Orange). $385 · Audio $485.
             </p>
-            <p class="lineup__hero">Hero feature · Four-color tap switch</p>
+            <p class="lineup__hero">Hero · Four-color tap · best paid performer</p>
           </div>
         </article>
 
         <article class="lineup__row lineup__row--reverse">
-          <div class="lineup__media"><span class="lineup__slot">MUSIC SHIELD</span></div>
+          <div class="lineup__media"><span class="lineup__slot">MUSIC SHIELD GEN 2</span></div>
           <div class="lineup__copy">
-            <p class="lineup__label">Music Shield Gen 2</p>
+            <p class="lineup__label">Music Shield Gen 2 · Sport · Eclipse™</p>
             <h3 class="lineup__headline">Run light. Hear everything.</h3>
             <p class="lineup__body">
               Tint-adjustable sport sunglasses with open-ear audio. Slide from
-              bright to blackout in 0.1s. Built for miles, not couch time.
+              bright to blackout in 0.1 seconds. Built for miles, not couch
+              time. $199 (MSRP $299).
             </p>
-            <p class="lineup__hero">Hero feature · Tint slider (audio supports)</p>
+            <p class="lineup__hero">Hero · Tint slider · audio supports · 9 NBA Team Editions</p>
           </div>
         </article>
 
         <article class="lineup__row">
-          <div class="lineup__media"><span class="lineup__slot">KNICKS</span></div>
+          <div class="lineup__media"><span class="lineup__slot">LION CITY</span></div>
           <div class="lineup__copy">
-            <p class="lineup__label">Knicks Edition</p>
-            <h3 class="lineup__headline">Built in Blue. Tuned for Orange.</h3>
+            <p class="lineup__label">Lion City · Lifestyle · HVL™</p>
+            <h3 class="lineup__headline">Italian acetate. Japanese lens.</h3>
             <p class="lineup__body">
-              Tint Control. Audio. Knicks. Co-branded colorway with Marbury at
-              the center.
+              Premium square frame with touch tint and open-ear audio. Anchor
+              of the Tortoise Trio collection. Available with Rx — the world's
+              first electronic tint-changing prescription sunglasses. $349.
             </p>
-            <p class="lineup__hero">Hero feature · Co-brand · ambassador-led</p>
+            <p class="lineup__hero">Hero · Premium acetate · dual touch · Rx-available</p>
           </div>
         </article>
 
         <article class="lineup__row lineup__row--reverse">
-          <div class="lineup__media"><span class="lineup__slot">PRISMATIC</span></div>
+          <div class="lineup__media"><span class="lineup__slot">AROZA</span></div>
           <div class="lineup__copy">
-            <p class="lineup__label">Prismatic</p>
-            <h3 class="lineup__headline">TBD — pending product brief.</h3>
+            <p class="lineup__label">Aroza · Sport · Eclipse™</p>
+            <h3 class="lineup__headline">Three tints. One button. The mountain.</h3>
             <p class="lineup__body">
-              Positioning to be added to <code>chamelo-branding.json</code>
-              once finalized.
+              Next-gen goggles with instant electronic tint control. The first
+              Chamelo product to bring Eclipse to a goggle form factor. $349.
             </p>
-            <p class="lineup__hero">Hero feature · TBD</p>
+            <p class="lineup__hero">Hero · Goggle form · 3 tint levels · year-round retail</p>
           </div>
         </article>
       </div>
@@ -227,41 +212,54 @@
     <!-- 04 · CAMPAIGNS -->
     <section class="section section--alt" id="campaigns">
       <div class="section__head">
-        <p class="section__num">04</p>
-        <h2 class="section__title">Campaigns</h2>
+        <p class="section__label">04 · Campaigns</p>
+        <h2 class="section__title">Every campaign <br/><span class="muted">lives as a page.</span></h2>
         <p class="section__deck">
-          Every campaign lives as a sub-page. New campaigns are spun up from
-          the brand system in this repo — brand intel, script, casting,
-          storyboard, video, statics.
+          New campaigns spin up from the brand system in this repo — brand
+          intel, script, casting, storyboard, video, statics.
         </p>
       </div>
 
       <div class="campaigns">
         <a class="campaign campaign--empty" href="#" aria-disabled="true">
+          <p class="campaign__date">Active · 2026</p>
+          <h3 class="campaign__title">Aura · Compliments hook</h3>
+          <p class="campaign__body">
+            UGC creative built around the "wait — are those changing color?"
+            real-life reaction. Best paid performer. Fashion-channel budget,
+            not sport-tech.
+          </p>
+          <p class="campaign__status">In rotation</p>
+        </a>
+        <a class="campaign campaign--empty" href="#" aria-disabled="true">
+          <p class="campaign__date">June · 2026</p>
+          <h3 class="campaign__title">NBA Team Editions · 8-team drop</h3>
+          <p class="campaign__body">
+            Spurs · Celtics · Lakers · Warriors · Suns · Heat · Bulls · Thunder.
+            Pre-sale active, ships end of June. Knicks already live with
+            Marbury.
+          </p>
+          <p class="campaign__status">Pre-sale · NBA license rules apply</p>
+        </a>
+        <a class="campaign campaign--empty" href="#" aria-disabled="true">
+          <p class="campaign__date">Active · 2026</p>
+          <h3 class="campaign__title">Tortoise Trio · Italian acetate</h3>
+          <p class="campaign__body">
+            Lion City + Infinity + Zurix in a shared tortoise colorway moment.
+            "Italian acetate. Japanese lens technology." Zurix carries the
+            women's-market expansion.
+          </p>
+          <p class="campaign__status">Pushing</p>
+        </a>
+        <a class="campaign campaign--empty" href="#" aria-disabled="true">
           <p class="campaign__date">Q3 · 2026</p>
-          <h3 class="campaign__title">Music Shield Gen 2 — Launch</h3>
+          <h3 class="campaign__title">Music Shield Gen 2 · UGC pipeline test</h3>
           <p class="campaign__body">
-            First UGC campaign built on the new pipeline. 30s spot + 16 Meta
-            statics. Not yet generated.
+            First 30s UGC spot built end-to-end in Claude Code. 16 Meta
+            statics across the funnel. Truck-driver and indoor/outdoor-worker
+            angles to test.
           </p>
-          <p class="campaign__status">Status · Pending Step 01</p>
-        </a>
-        <a class="campaign campaign--empty" href="#" aria-disabled="true">
-          <p class="campaign__date">TBD</p>
-          <h3 class="campaign__title">Aura · Mood-on-command</h3>
-          <p class="campaign__body">
-            Aura mood-state campaign. To be scoped after Music Shield ships.
-          </p>
-          <p class="campaign__status">Status · Planned</p>
-        </a>
-        <a class="campaign campaign--empty" href="#" aria-disabled="true">
-          <p class="campaign__date">TBD</p>
-          <h3 class="campaign__title">Knicks Edition · Marbury</h3>
-          <p class="campaign__body">
-            Founder-led campaign anchored on real Marbury moments. Co-brand
-            timing TBD.
-          </p>
-          <p class="campaign__status">Status · Planned</p>
+          <p class="campaign__status">Pending Step 01</p>
         </a>
       </div>
     </section>
@@ -269,10 +267,11 @@
     <!-- 05 · SYSTEM -->
     <section class="section" id="system">
       <div class="section__head">
-        <p class="section__num">05</p>
-        <h2 class="section__title">System</h2>
+        <p class="section__label">05 · System</p>
+        <h2 class="section__title">Source files <br/><span class="muted">and guardrails.</span></h2>
         <p class="section__deck">
-          Source files, generation pipeline, and AI-content guardrails.
+          The brand brain, the generation pipeline, and the rules every AI
+          asset must pass before it ships.
         </p>
       </div>
 
@@ -282,6 +281,9 @@
           <ul class="syscard__list">
             <li><code>01_brand-overview.md</code></li>
             <li><code>02_voice-guide.md</code></li>
+            <li><code>03-product-specs-index.md</code> + 6 product files</li>
+            <li><code>04-consumer-language.md</code></li>
+            <li><code>05-use-case-messaging.md</code></li>
             <li><code>chamelo-branding.json</code></li>
           </ul>
         </article>
@@ -289,7 +291,7 @@
           <p class="syscard__label">Pipeline</p>
           <ul class="syscard__list">
             <li>Claude Code · orchestration</li>
-            <li>kie.ai · image + video generation</li>
+            <li>kie.ai · image + video</li>
             <li>GPT Image 2 · stills</li>
             <li>Kling 3.0 · image-to-video</li>
             <li>Figma · finishing</li>
@@ -313,13 +315,13 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__row">
-        <p class="footer__brand">CHAMELO</p>
+        <img class="footer__logo" src="./assets/logo.svg" alt="Chamelo" />
         <p class="footer__meta">
           Creative Studio · v0.1 ·
           <a href="https://github.com/Chameloeyewear/chamelo-ads">github.com/Chameloeyewear/chamelo-ads</a>
         </p>
       </div>
-      <p class="footer__rule">Be different. See different.</p>
+      <p class="footer__rule">Be different. <span class="gradient-text">See different.</span></p>
     </div>
   </footer>
 
