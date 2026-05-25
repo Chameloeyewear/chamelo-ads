@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__higgsfield__generate_image",
+      "mcp__higgsfield__media_upload",
+      "mcp__higgsfield__media_confirm",
+      "mcp__higgsfield__show_medias",
+      "mcp__higgsfield__job_display",
+      "mcp__higgsfield__balance",
+      "mcp__higgsfield__list_workspaces",
+      "Bash(curl -s -X POST https://api.kie.ai/api/v1/jobs/createTask *)",
+      "Bash(curl -s https://api.kie.ai/api/v1/jobs/recordInfo?taskId=* *)",
+      "Bash(curl -s \"https://api.kie.ai/api/v1/jobs/recordInfo?taskId=*\" *)",
+      "Bash(curl -sL https://tempfile.aiquickdraw.com/* -o *)",
+      "Bash(curl -sL https://d2ol7oe51mr4n9.cloudfront.net/* -o *)",
+      "Bash(curl -sL https://d8j0ntlcm91z4.cloudfront.net/* -o *)",
+      "Bash(sips -s format jpeg *)",
+      "Bash(npm run *)",
+      "Bash(vercel --prod --yes)",
+      "Bash(vercel env pull *)",
+      "Bash(git add *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(ls *)",
+      "Bash(mkdir -p *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "WebFetch(domain:chamelo.com)",
+      "WebFetch(domain:docs.kie.ai)",
+      "WebSearch"
+    ]
+  }
+}
