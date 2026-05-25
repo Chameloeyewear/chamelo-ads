@@ -35,7 +35,9 @@ KIE_AI_KEY=<ask Chase for the team key>
 ```
 This file is gitignored — never commit API keys.
 
-### 4. Install the Vercel CLI + link the gallery
+### 4. Get added to the Vercel team
+Ask Chase to invite your email at **vercel.com/chamelo/settings/members** (role: Member).
+You'll get an email — accept it. Then:
 ```
 npm install -g vercel
 cd ../chamelo-gallery
